@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 const NavBar = () => {
-  const links = [
-    { id: 1, title: "home" },
-    { id: 2, title: "portfolio" },
-    { id: 3, title: "experience" },
-    { id: 4, title: "contact" },
-  ];
+  const links = ["home", "about", "experience", "contact"];
+  // ["portfolio"]
   const [nav, setNav] = useState(false);
   return (
     <div className="flex justify-between items-center w-full px-4 h-20 text-white bg-black fixed">
@@ -20,7 +16,7 @@ const NavBar = () => {
               key={i}
               className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 hover:text-white duration-300"
             >
-              {link.title}
+              {link}
             </li>
           ))}
         </ul>
@@ -38,7 +34,7 @@ const NavBar = () => {
               key={i}
               className="text-5xl py-6 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 hover:text-white duration-300"
             >
-              {link.title}
+              {link}
             </li>
           ))}
         </ul>

@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <div
-      className="flex flex-col md:flex-row h-screen w-full pt-20 px-6 bg-gradient-to-t from-black via-black to-gray-800"
-      name="home"
+      className="flex flex-col md:flex-row lg:h-screen w-full pt-20 px-6 bg-gradient-to-t from-black via-black to-gray-800"
+      name="about"
     >
       <div className="max-w-screen-lg mx-auto items-center px-4 md:flex-row">
         <div className="py-8">
