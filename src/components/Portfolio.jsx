@@ -69,7 +69,7 @@ const Portfolio = () => {
                   src={portfolio.image}
                   alt="p1"
                 />
-                <div className="flex justify-between px-12 py-2.5 text-white">
+                <div className="flex justify-between px-12 py-2.5 text-white text-xl">
                   <button className="hover:scale-110 duration-300  text-gray-500 hover:text-white">
                     Demo
                   </button>
