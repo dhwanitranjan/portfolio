@@ -1,10 +1,11 @@
 import React from "react";
 import myPic3 from "../assets/myPic3.jpg";
 import { RiArrowRightSLine } from "react-icons/ri";
+import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div
-      className="flex flex-col md:flex-row lg:h-screen w-full pt-20 px-6 bg-gradient-to-b from-black via-black to-gray-800"
+      className="flex flex-col md:flex-row lg:h-screen w-full pt-16 px-6 bg-gradient-to-b from-black via-black to-gray-800"
       name="home"
     >
       <div className="max-w-screen-lg mx-auto items-center px-4 md:flex-row">
@@ -17,12 +18,17 @@ const Home = () => {
             React, TypeScript, Redux, Bootstrap, TailWind
           </p>
           <div>
-            <button className="group flex flex-row w-fit px-4 py-4 rounded-md text-white bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
-              Portfolio
+            <Link
+              to={"experience"}
+              duration={500}
+              smooth
+              className="group flex flex-row w-fit px-4 py-4 rounded-md text-white bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            >
+              Skills
               <span className="group-hover:rotate-90 duration-300">
                 <RiArrowRightSLine size={25} />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -9,27 +9,68 @@ import logo_typescript from "../assets/logo_typescript.png";
 import logo_css from "../assets/logo_css.png";
 import logo_html from "../assets/logo_html.png";
 
-const Skills = () => {
+const Experience = () => {
   const logos = [
     {
       id: 1,
       title: "React",
       logo: logo_react,
       style: "group-hover:rotate-180 duration-1000",
+      shadowStyle: "shadow-md shadow-orange-400",
     },
-    { id: 1, title: "Redux", logo: logo_redux },
-    { id: 1, title: "JavaScript", logo: logo_javaScript, style: "hover:flip" },
-    { id: 1, title: "TypeScript", logo: logo_typescript },
-    { id: 1, title: "Git", logo: logo_git, style: "bg-white" },
-    { id: 1, title: "CSS", logo: logo_css },
-    { id: 1, title: "Tailwind", logo: logo_tailwind },
-    { id: 1, title: "BootStrap", logo: logo_bootstrap },
-    { id: 1, title: "HTML", logo: logo_html },
+    {
+      id: 1,
+      title: "Redux",
+      logo: logo_redux,
+      shadowStyle: "shadow-md shadow-orange-600",
+    },
+    {
+      id: 1,
+      title: "JavaScript",
+      logo: logo_javaScript,
+      shadowStyle: "shadow-md shadow-orange-800",
+    },
+    {
+      id: 1,
+      title: "TypeScript",
+      logo: logo_typescript,
+      shadowStyle: "shadow-md shadow-white",
+    },
+    {
+      id: 1,
+      title: "Git",
+      logo: logo_git,
+      shadowStyle: "bg-white shadow-md shadow-blue-600",
+    },
+    {
+      id: 1,
+      title: "CSS",
+      logo: logo_css,
+      shadowStyle: "shadow-md shadow-white",
+    },
+    {
+      id: 1,
+      title: "Tailwind",
+      logo: logo_tailwind,
+      shadowStyle: "shadow-md shadow-green-400",
+    },
+    {
+      id: 1,
+      title: "BootStrap",
+      logo: logo_bootstrap,
+      shadowStyle: "shadow-md shadow-green-600",
+    },
+    {
+      id: 1,
+      title: "HTML",
+      logo: logo_html,
+      shadowStyle: "shadow-md shadow-green-800",
+    },
   ];
   return (
     <div
-      className="flex flex-col md:flex-row w-full pt-20 px-6 bg-gradient-to-b from-black via-black to-gray-800 pb-24"
-      name="about"
+      className="flex flex-col md:flex-row w-full pt-16 px-6 bg-gradient-to-b from-black via-black to-gray-800 pb-24"
+      name="experience"
     >
       <div className="max-w-screen-lg mx-auto items-center px-4 md:flex-row">
         <div className="py-8">
@@ -43,7 +84,11 @@ const Skills = () => {
             return (
               <div
                 key={i}
-                className="group max-h-48 object-fill shadow-md shadow-gray-600 rounded-lg hover:scale-105 duration-300"
+                className={
+                  "group max-h-48 object-fill rounded-lg hover:scale-105 duration-300 z-0" +
+                  " " +
+                  logo.shadowStyle
+                }
               >
                 <img
                   className={
@@ -64,4 +109,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Experience;
